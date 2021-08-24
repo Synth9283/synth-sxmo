@@ -8,8 +8,10 @@ My personal settings for sxmo
 - [2. Table of contents](#2-table-of-contents)
 - [3. Notes](#3-notes)
   - [3.1. Install](#31-install)
-  - [3.2. .Xresources](#32-xresources)
-  - [3.3. Anbox](#33-anbox)
+  - [3.2. Usage](#32-usage)
+  - [3.3. anbox.sh](#33-anboxsh)
+  - [3.4. anbox-shell.sh](#34-anbox-shellsh)
+    - [3.4.1. To install apk via anbox-shell.sh](#341-to-install-apk-via-anbox-shellsh)
 - [4. Resources](#4-resources)
   - [4.1. Sxmo Userguide](#41-sxmo-userguide)
   - [4.2. Sxmo userscripts location](#42-sxmo-userscripts-location)
@@ -22,19 +24,18 @@ My personal settings for sxmo
 ./install.sh
 # Manually move contents of userscripts/ into $XDG_CONFIG_HOME/sxmo/userscripts since user can vary
 ```
-
-## 3.2. .Xresources
+## 3.2. Usage
+## 3.3. anbox.sh
+> Must have anbox and anbox-image installed
+> Run the script to start anbox
+## 3.4. anbox-shell.sh
+> Must have anbox running
+> Run the script to get a shell in
+### 3.4.1. To install apk via anbox-shell.sh
 ```
-mv .Xresources ~/.Xresources
-mv background.jpg /usr/share/sxmo/background.jpg
-```
-
-## 3.3. Anbox
-```
-sudo ./anbox-shell.sh # https://raw.githubusercontent.com/anbox/anbox/master/scripts/anbox-shell.sh
 # Move apk to /var/lib/anbox/data/media/0/Download
 # Apk location in anbox /sdcard/Download/
-pm install --user 0 NAME.apk # installs the apk in the adb shell
+pm install --user 0 /sdcard/Download/NAME.apk # installs the apk in the adb shell
 ```
 
 # 4. Resources
