@@ -29,8 +29,9 @@ My personal settings for sxmo
 > Must have anbox and anbox-image installed
 > Run the script to start anbox
 ## 3.4. anbox-shell.sh
+> Download from [4.3. Anbox](#43-anbox)
 > Must have anbox running
-> Run the script to get a shell in
+> Run it as root
 ### 3.4.1. To install apk via anbox-shell.sh
 ```
 # Move apk to /var/lib/anbox/data/media/0/Download
