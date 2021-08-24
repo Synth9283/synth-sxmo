@@ -1,11 +1,11 @@
 #!/bin/bash
 
-sudo /bin/bash
-
 # if [ "$(id -u)" -ne 0 ]; then
 #     echo "ERROR: You need to run this script as root!"
 #     exit 1
 # fi
+
+su
 
 CONTAINER_PATH="$SNAP_COMMON/containers"
 CONTAINER_NAME=default
