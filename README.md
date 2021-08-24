@@ -10,7 +10,8 @@ My personal settings for sxmo
   - [3.3. Anbox](#33-anbox)
 - [4. Resources](#4-resources)
   - [4.1. Sxmo Userguide](#41-sxmo-userguide)
-  - [4.2. Anbox](#42-anbox)
+  - [4.2. Sxmo userscripts location](#42-sxmo-userscripts-location)
+  - [4.3. Anbox](#43-anbox)
 
 # 3. Notes
 ## 3.1. Install
@@ -36,7 +37,9 @@ pm install --user 0 NAME.apk # installs the apk in the adb shell
 # 4. Resources
 ## 4.1. Sxmo Userguide
 > https://sxmo.org/docs/USERGUIDE.html
+## 4.2. Sxmo userscripts location
+> $XDG_CONFIG_HOME/sxmo/userscripts/
 
-## 4.2. Anbox
+## 4.3. Anbox
 > https://github.com/dreemurrs-embedded/Pine64-Arch/issues/143
 > https://raw.githubusercontent.com/anbox/anbox/master/scripts/anbox-shell.sh
