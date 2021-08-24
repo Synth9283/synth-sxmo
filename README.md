@@ -1,8 +1,7 @@
 # 1. synth-sxmo
 My personal settings for sxmo
 
-![Main screen](examples/example1.png)
-![dmenu screen](examples/example2.png)
+![Example](examples/example1.png)
 
 # 2. Table of contents
 - [1. synth-sxmo](#1-synth-sxmo)
