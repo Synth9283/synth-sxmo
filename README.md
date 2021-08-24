@@ -1,6 +1,9 @@
 # 1. synth-sxmo
 My personal settings for sxmo
 
+![Main screen](examples/example1.png)
+![dmenu screen](examples/example2.png)
+
 # 2. Table of contents
 - [1. synth-sxmo](#1-synth-sxmo)
 - [2. Table of contents](#2-table-of-contents)
@@ -12,6 +15,7 @@ My personal settings for sxmo
   - [4.1. Sxmo Userguide](#41-sxmo-userguide)
   - [4.2. Sxmo userscripts location](#42-sxmo-userscripts-location)
   - [4.3. Anbox](#43-anbox)
+- [5. Credit](#5-credit)
 
 # 3. Notes
 ## 3.1. Install
@@ -43,3 +47,6 @@ pm install --user 0 NAME.apk # installs the apk in the adb shell
 ## 4.3. Anbox
 > https://github.com/dreemurrs-embedded/Pine64-Arch/issues/143
 > https://raw.githubusercontent.com/anbox/anbox/master/scripts/anbox-shell.sh
+
+# 5. Credit
+> https://github.com/justinesmithies/sxmo-alarm

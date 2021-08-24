@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$(id -u)" -ne 0 ]; then
     echo "ERROR: You need to run this script as root!"
@@ -22,7 +22,7 @@ echo "NOTE: This shell will give you full root access inside the Android"
 echo "      container. Be careful with what you're doing!"
 echo
 
-exec lxc-attach \
+sudo exec lxc-attach \
     -q \
     --clear-env \
     -P "$CONTAINER_PATH" \
