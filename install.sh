@@ -12,7 +12,7 @@ do
     appName=$(cat $file | grep "Name=" | cut -d'=' -f 2-)
     execCommand=$(cat $file | grep "Exec=" | cut -d'=' -f 2-)
 
-    if echo "$defaultAppName" | grep -w "$appNam"e > /dev/null; then
+    if echo "$defaultAppName" | grep -w "$appName" > /dev/null; then
         continue
     else
 
