@@ -16,9 +16,9 @@ do
         continue
     else
 
-        echo -e "#!/bin/bash\n" > $XDG_CONFIG_HOME/sxmo/userscripts/$appName.sh
-        echo "export EGL_PLATFORM=x11" >> $XDG_CONFIG_HOME/sxmo/userscripts/$appName.sh
-        echo $execCommand >> $XDG_CONFIG_HOME/sxmo/userscripts/$appName.sh
+        echo -e "#!/bin/bash\n" > "$XDG_CONFIG_HOME/sxmo/userscripts/$appName.sh"
+        echo "export EGL_PLATFORM=x11" >> "$XDG_CONFIG_HOME/sxmo/userscripts/$appName.sh"
+        echo $execCommand >> "$XDG_CONFIG_HOME/sxmo/userscripts/$appName.sh"
     fi
 done
 
