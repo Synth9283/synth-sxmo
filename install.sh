@@ -8,7 +8,7 @@ cp -v userscripts/*.sh $XDG_CONFIG_HOME/sxmo/userscripts/
 
 for file in ~/.local/share/applications/anbox/*.desktop;
 do
-    defaultAppName="Calculator Calendar Clock Contacts Email F-Droid Files Gallery Music Settings Simple Keyboard WebView"
+    defaultAppName="Calculator Calendar Clock Contacts Email F-Droid Files Gallery Music Settings Simple Keyboard WebView Shell"
     appName=$(cat $file | grep "Name=" | cut -d'=' -f 2-)
     execCommand=$(cat $file | grep "Exec=" | cut -d'=' -f 2-)
 
