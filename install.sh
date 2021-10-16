@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cwd = $(pwd)
+cwd=$(pwd)
 
 cp -v ~/.Xresources ~/.Xresources_bak
 cp -v .Xresources ~/.Xresources
