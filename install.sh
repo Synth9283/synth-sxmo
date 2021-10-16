@@ -12,7 +12,7 @@ sudo cp -v dwm-config.def.h ~/build-sxmo-dev/sxmo-dwm/config.def.h
 sudo cp -v dwm-gaps-6.0.diff ~/build-sxmo-dev/sxmo-dwm/dwm-gaps-6.0.diff
 sudo cp -v ~/build-sxmo-dev/sxmo-dwm/config.def.h ~/build-sxmo-dev/sxmo-dwm/config.h
 cd ~/build-sxmo-dev/sxmo-xdm-config/ && sudo make clean install
-cd ~/build-sxmo-dev/sxmo-dwm/ && patch -p1 < dwm-gaps-6.0.diff && sudo make clean install
+cd ~/build-sxmo-dev/sxmo-dwm/ && sudo patch -p1 < dwm-gaps-6.0.diff && sudo make clean install
 cd $cwd
 cp -v userscripts/*.sh $XDG_CONFIG_HOME/sxmo/userscripts/
 
