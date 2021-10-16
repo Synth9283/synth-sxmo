@@ -1,9 +1,17 @@
 #!/bin/bash
 
+cwd = $(pwd)
+
 cp -v ~/.Xresources ~/.Xresources_bak
 cp -v .Xresources ~/.Xresources
 sudo cp -v /usr/share/sxmo/background.jpg /usr/share/sxmo/background.jpg_bak
 sudo cp -v background.jpg /usr/share/sxmo/background.jpg
+sudo cp -v xdm-Xresources ~/build-sxmo-dev/sxmo-xdm-config/Xresources
+sudo cp -v dwm-config.def.h ~/build-sxmo-dev/sxmo-dwm/config.def.h
+sudo cp -v ~/build-sxmo-dev/sxmo-dwm/config.def.h ~/build-sxmo-dev/sxmo-dwm/config.h
+cd ~/build-sxmo-dev/sxmo-xdm-config/ && sudo make clean install
+cd ~/build-sxmo-dev/sxmo-dwm/ && sudo make clean install
+cd $cwd
 cp -v userscripts/*.sh $XDG_CONFIG_HOME/sxmo/userscripts/
 
 for file in ~/.local/share/applications/anbox/*.desktop;
