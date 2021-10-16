@@ -8,8 +8,8 @@ sudo cp -v /usr/share/sxmo/background.jpg /usr/share/sxmo/background.jpg_bak
 sudo cp -v background.jpg /usr/share/sxmo/background.jpg
 sudo cp -v background.jpg /usr/lib/X11/xdm/wallpaper.jpg
 sudo cp -v xdm-Xresources ~/build-sxmo-dev/sxmo-xdm-config/Xresources
-sudo cp -v dwm-config.def.h ~/build-sxmo-dev/sxmo-dwm/config.def.h
 sudo cp -v dwm.c ~/build-sxmo-dev/sxmo-dwm/dwm.c
+sudo cp -v dwm-config.def.h ~/build-sxmo-dev/sxmo-dwm/config.def.h
 sudo cp -v ~/build-sxmo-dev/sxmo-dwm/config.def.h ~/build-sxmo-dev/sxmo-dwm/config.h
 cd ~/build-sxmo-dev/sxmo-xdm-config/ && sudo make clean install
 cd ~/build-sxmo-dev/sxmo-dwm/ && sudo make clean install
