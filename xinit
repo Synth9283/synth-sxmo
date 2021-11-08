@@ -1,0 +1,68 @@
+#!/usr/bin/env sh
+
+# Please modify this file to your liking
+
+# Important Instructions:
+#  All processes you launch from this script must
+#  be non-blocking: launch them in the background (using &)
+#  or ensure they return quickly. Only after this script
+#  finishes will the window manager be loaded
+
+# Set a pretty wallpaper
+feh --bg-fill /usr/share/sxmo/background.jpg
+
+# Show conky (the clock)
+#conky -c /usr/share/sxmo/appcfg/conky.conf -d #12 hour clock (am/pm)
+conky -c /usr/share/sxmo/appcfg/conky24h.conf -d  #24 hour clock
+
+# Force audio over the main speaker
+# and set a sane default volume
+sxmo_audioout.sh Speaker
+amixer sset 'Line Out Source' 'Mono Differential','Mono Differential'
+amixer set "Line Out" 50%
+
+# Play a funky startup tune
+#mpv --quiet --no-video /usr/share/sxmo/startup.ogg &
+
+# enter SIM PIN (WARNING! SECURITY RISK!)
+#  the sleep is there because the modem
+#  might take a bit to be available
+#  after first boot.
+#sleep 20 && mmcli -i 0 --pin 1234
+
+# turn on modemmonitor on login
+# Note: if the modemmonitor is not on you can
+# not receive texts/calls!
+#sleep 22 && sxmo_modemmonitortoggle.sh on &
+
+
+
+### Configuration Parameters ###
+
+# Note that this is just a subset of all available
+# parameters, see the sxmo documentation for more.
+
+# Use firefox as default browser if installed
+command -v firefox && export BROWSER=firefox
+
+# Prepopulate Subreddits menu with custom subreddits
+#export SXMO_SUBREDDITS="postmarketos pinephoneOfficial pinephone unixporn"
+
+# Temporarily wake every 5 minutes during sleep
+#(useful for getting notifications)
+#export SXMO_RTCWAKEINTERVAL=300
+
+# Immediately turn the screen off when locking the device
+export SXMO_LOCK_SCREEN_OFF=1
+
+# Immediately suspend the phone when locking
+#export SXMO_LOCK_SUSPEND=1
+
+# When scrolling past the beginning or end of a menu, wrap it around:
+export DMENU_WRAP_AROUND=1
+
+# Enable audio feedback on keypress
+#export KEYBOARD_ARGS="-o | clickclack -f /usr/share/sxmo/keypress.wav"
+
+# Or, enable vibration feedback on keypress
+#export KEYBOARD_ARGS="-o | clickclack -V"

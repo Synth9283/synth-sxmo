@@ -4,6 +4,8 @@ cwd=$(pwd)
 
 cp -v ~/.Xresources ~/.Xresources_bak
 cp -v .Xresources ~/.Xresources
+cp -v ~/.config/sxmo/xinit ~/.config/sxmo/xinit_bak
+cp -v xinit ~/.config/sxmo/xinit
 sudo cp -v /usr/share/sxmo/background.jpg /usr/share/sxmo/background.jpg_bak
 sudo cp -v background.jpg /usr/share/sxmo/background.jpg
 sudo cp -v background.jpg /usr/lib/X11/xdm/wallpaper.jpg
@@ -11,12 +13,13 @@ sudo cp -v xdm-Xresources ~/build-sxmo-dev/sxmo-xdm-config/Xresources
 sudo cp -v dwm.c ~/build-sxmo-dev/sxmo-dwm/dwm.c
 sudo cp -v dwm-config.def.h ~/build-sxmo-dev/sxmo-dwm/config.def.h
 sudo cp -v ~/build-sxmo-dev/sxmo-dwm/config.def.h ~/build-sxmo-dev/sxmo-dwm/config.h
+
 cd ~/build-sxmo-dev/sxmo-xdm-config/ && sudo make clean install
 cd ~/build-sxmo-dev/sxmo-dwm/ && sudo make clean install
 cd $cwd
 cp -v userscripts/*.sh $XDG_CONFIG_HOME/sxmo/userscripts/
 
-for file in ~/.local/share/applications/anbox/*.desktop;
+for file in ~/.local/share/applications/anbox/*.desktop
 do
     defaultAppName="Calculator Calendar Clock Contacts Email F-Droid Files Gallery Music Settings Simple Keyboard WebView Shell"
     appName=$(cat $file | grep "Name=" | cut -d'=' -f 2-)
